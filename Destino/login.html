@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="index.css">
+    <title>DESTINO</title>
+</head>
+<script src="login.js"></script>
+<body>
+    <nav>
+        <a class="logo" href="index.html">
+            DESTINO
+        </a>
+        <div class="nav-link" id="navLink">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+                <li><a href="index.html">HOME</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="about.html">ABOUT</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="contact.html">CONTACT</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="login.html">LOGIN</a></li>&nbsp;&nbsp;&nbsp;
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+
+   
+     <section class="sub-header">
+        <h3>User Log-In</h3>
+       
+        <div class="row" >
+          <div  class="flex-col">
+            <div>
+                 <img src="./imagess/showcase-photo1.jpg" class="img-fluid">
+            </div>
+          </div>
+          
+           <div class="flex-col">
+            <form action="index.html" method="post" class="login-form" name="form" onsubmit="return validate()">
+            <!-- <h3>User Log-In</h3> -->
+            
+            <input type="text"  name="email" placeholder="Email or Phone no" class="detail" required><br><br>
+            <input type="password" autocomplete="off" name="password" placeholder="Enter Your Password" class="detail" required><br><br>
+             
+            <div>
+                <input type="checkbox" name="checkbox" class="cb">&nbsp;&nbsp;Remember Password 
+                <a href="" class="fp">Forget Password?</a><br><br>
+            </div>
+            <div class="flex-btn">
+                <button type="submit" class="btn-view">Login here</button>
+                    <h2>or</h2>
+                <button type="submit" class="btn-view" onclick="signupBtn()">SignUp</button>
+            </div>
+                    
+            
+
+           </div>
+        </div>
+    </section> 
+</form>
+
+
+
+ 
+   <script>
+        function signupBtn(){
+            window.location.href= "signUp.html";
+        }
+
+        var navLink =document.getElementById("navLink");
+        function showMenu(){
+            navLink.style.right = "0px";
+        }
+        function hideMenu(){
+            navLink.style.right = "-200px";
+        }
+
+
+
+        
+       
+   </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>DESTINO</title>
+</head>
+<body>
+    <section class="sub-header">
+        <!-- <img src="./imagess/showcase-photo3.jpg" height="300px" width="100%"> -->
+    <nav>
+        <a class="logo" href="index.html">
+            DESTINO
+        </a>
+        <div class="nav-link" id="navLink">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+                <li><a href="index.html">HOME</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="about.html">ABOUT</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="contact.html">CONTACT</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="login.html">LOGIN</a></li>&nbsp;&nbsp;&nbsp;
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+
+</section>
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497699.99890713283!2d77.35003319239779!3d12.953846964984058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1679651381523!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+        <div>
+            <i class="fa fa-home"></i>
+            <span>
+                <h5>XYZ Cross, ABC Building</h5>
+                <p>Bangalore, Karnataka</p>
+            </span>
+           
+        </div>
+
+        <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+                <h5>xyz@gmail.com</h5>
+                <p>Email your query</p>
+            </span>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <span>
+                <h5>+91 1234098765</h5>
+                <p>Monday 10 Friday (10am-6pm)</p>
+            </span>
+        </div>
+    </div>
+
+       <div class="contact-col">
+            <form action="" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required><br><br>
+                <input type="email" name="email" placeholder="Enter your email address" required><br><br>
+                <input type="text" name="subject" placeholder="Enter your subject" required><br><br>
+                <textarea name="msg" id="" rows="10" placeholder="Message" required></textarea><br><br>
+                <button type="submit" onclick="myBtn()" class="btn-view red-btn" >Submit Message</button>
+            
+            </form>
+       </div>
+    </div>
+</section>
+
+<section class="footer">
+    <h1>About Us</h1>
+    <p>Building the Holiday Eco-system for Happy Travelers <br>  TravelTriangle is India’s leading online holiday marketplace bringing both the travelers, and trusted & expert travel agents on a common platform.</p>
+   
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+
+</section>
+
+
+
+
+
+<script>
+function myBtn(){
+   alert("submitted");
+}
+// myBtn();
+
+    var navLink = document.getElementById("navLink");
+    function showMenu(){
+        navLink.style.right = "0px";
+    }
+    function hideMenu(){
+        navLink.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

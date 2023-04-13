@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(4, 13, 69);
+    position:relative;
+    /* width: 100%; */
+    margin-bottom: 50px;
+
+}
+.sub-header{
+    width: 90%;
+    margin: auto;
+    background-color: rgb(150, 138, 243);
+    border-radius: 5px;
+
+}
+/* .flex-row{
+    display: flex;
+    width: 70%;
+    height: 500px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+     
+}  */
+.flex-col{
+
+    flex-basis: 50%;
+    margin: 5px;
+
+}
+.flex-col div img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+ h3{
+   width: 80%;
+   height: 50px;
+   margin: auto;
+   padding-top: 15px;
+   font-size: 40px;
+   text-align: center; 
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;           
+   color:  rgb(4, 13, 69);
+}
+.detail{
+    width: 100%;
+    margin-top: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    border: 1px solid rgb(116, 114, 114);
+
+}
+
+.checkbox{
+    margin-right: auto;
+    font-size: 25px;
+}
+.cb{
+    float: left;
+}
+
+.fp{
+    float: right;
+    /* margin-right: 15px; */
+    font-size: 15px;
+}
+.flex-btn{
+    /* margin-left: 100px; */
+    /* margin: auto; */
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+    
+}
+h2{
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+p{
+    text-align: center;
+}
+
+
+/* ------------------MEDIA QUERY---------------- */
+
+@media screen and(max-width: 700px){
+
+
+    .flex-btn{
+        margin-left: 0px;
+        margin-top: 50px;
+        display: inline;
+    }
+}

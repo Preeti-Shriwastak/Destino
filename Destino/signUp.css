@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.signup-content{
+    margin: auto;
+    position: relative;
+    border: 1px solid rgb(54, 54, 58);
+    border-radius: 10px;
+    display: flex;
+    width: 80%;
+
+}
+.sub-row{
+    width: 100%;
+    margin: auto;
+    background-color: rgb(247, 121, 121);
+}
+.row-col h3{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;           
+}
+input{
+    width: 80%;
+    /* margin: auto; */
+    margin-top: 30px;
+    margin-left: 10px;
+    padding: 17px;
+    border: 1px solid rgb(35, 34, 34);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: -15px;
+    border-radius: 5px;
+}
+.flex-btn{
+    width: 80%;
+    margin: auto;
+}
+
+
+@media screen and(max-width:700px){
+    h3{
+        font-size: 20px;
+    }
+}

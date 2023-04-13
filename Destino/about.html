@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="index.css">
+    <title>DESTINO</title>
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <a class="logo" href="index.html">
+            DESTINO
+        </a>
+        <div class="nav-link" id="navLink">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+                <li><a href="index.html">HOME</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="about.html">ABOUT</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="contact.html">CONTACT</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="login.html">LOGIN</a></li>&nbsp;&nbsp;&nbsp;
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+</section>
+
+<section class="footer">
+    <h1>About Us</h1>
+    <p>Building the Holiday Eco-system for Happy Travelers <br>  TravelTriangle is India’s leading online holiday marketplace bringing both the travelers, and trusted & expert travel agents on a common platform.</p>
+       
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<script>
+    navLink = document.getElementById("navLink");
+    function showMenu(){
+        navLink.style.right = "0";
+    }
+    function hideMenu(){
+        navLink.style.right = "-200px";
+    }
+</script>
+    
+    
+</body>
+</html>

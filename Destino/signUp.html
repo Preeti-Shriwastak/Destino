@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signUp.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="index.css">
+    <title>DESTINO</title>
+</head>
+<body>
+    <nav>
+        <a class="logo" href="index.html">
+            DESTINO
+        </a>
+        <div class="nav-link" id="navLink">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+                <li><a href="index.html">HOME</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="about.html">ABOUT</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="contact.html">CONTACT</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="login.html">LOGIN</a></li>&nbsp;&nbsp;&nbsp;
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+    <section class="signup-content">
+        <div class="sub-row">
+            <div class="row-col">
+                <h3>Register Here</h3>
+                <input type="text" name="fname" placeholder="Enter First Name" required><br><br>
+                <input type="text" name="lname" placeholder="Enter Last Name" required><br><br>
+                <input type="Email" name="email" placeholder="Enter Email" required><br><br>
+                <input type="password" name="password" placeholder="Create Password" required><br><br>
+                <div class="flex-btn">
+                    <button class="btn-view">SignUp</button>
+                </div>
+            </div>
+            <p>Already have an account? <a href="login.html">Login now</a></p>
+
+        </div>
+
+    </section>
+
+<script>
+     var navLink =document.getElementById("navLink");
+        function showMenu(){
+            navLink.style.right = "0px";
+        }
+        function hideMenu(){
+            navLink.style.right = "-200px";
+        }
+</script>
+
+
+
+
+
+
+    <script>
+
+    </script>
+    
+</body>
+</html>
